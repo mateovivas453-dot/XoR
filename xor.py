@@ -15,10 +15,11 @@ def cifrado_xor(texto, clave):
 
 
 texto_original = "Hola Mundo!"
-llave = b'secreto'
+llave = "secreto"
 
 mensaje_cifrado = cifrado_xor(texto_original, llave)
 print("Cifrado:", mensaje_cifrado)
 
 mensaje_descifrado = cifrado_xor(mensaje_cifrado, llave)
 print("Descifrado:", mensaje_descifrado.decode())
+
